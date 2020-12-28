@@ -1,0 +1,37 @@
+
+.navbar-brand {
+width: 110px;
+background-color: lightseagreen;
+color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 18px;
+font-weight: bold;
+text-align: center;
+display: block;
+padding: 14px;
+margin: 0px 0px -8px 40px;
+/* top, right, bottom, left */
+}
+
+/* Found that this was what I needed to edit by inspecting the site itself and location the code that changed 
+the color of the text in the navbar brand */
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+/* change the color when you hover over the navbar brand to white so that there is no change in the color */
+.navbar-light .navbar-brand:hover{
+    color: white;
+}
+
+body {
+    background-color: lightgray;
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
