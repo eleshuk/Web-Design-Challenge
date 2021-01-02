@@ -1,17 +1,17 @@
-
 .navbar-brand {
     width: 110px;
-    background-color: lightseagreen;
+    background-color: #0BADA6;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
     display: block;
-    padding: 14px;
+    padding: 10px;
     margin: 0px 0px -8px 10px;
     /* top, right, bottom, left */
 }
+
 
 /* Found that this was what I needed to edit by inspecting the site itself and location the code that changed 
 the color of the text in the navbar brand */
@@ -24,7 +24,39 @@ the color of the text in the navbar brand */
     color: white;
 }
 
+.navbar .dropdown:hover {
+    background-color: lightgray;
+}
+
+/* add box background */
+.box {
+    margin-top: 60px; 
+    margin-bottom: 62px; 
+    padding: 10px 20px 15px; 
+    color:black;
+    background-color: white; 
+}
 body {
     background-color: lightgray;
 }
 
+.title {
+    color: #0BADA6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.row {
+    flex-wrap: -15px -15px;
+}
+
+.option:hover {
+    margin: black;
+}
+
+@media(max-width: 1000px){
+.navbar-expand-sm {
+background-color: #0BADA6 !important;
+}
+
+/* don't add anything under here that you don't want affected by @media */
