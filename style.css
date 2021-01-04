@@ -43,6 +43,7 @@ body {
     color: #0BADA6;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
+    padding: auto;
 }
 
 .row {
@@ -57,7 +58,7 @@ a .detail:hover {
 /* change the font and size of the description-- used for data and comparison pages */
 .description{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
     padding-bottom: 10px;
 }
@@ -132,12 +133,26 @@ a:hover {
 }
 
 /*  ---------------------------------------------------------------------------------------------------------- */
+/* DATA PAGE */
+.table {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+    margin-top: 60px;
+    background-color: white;
+}
+.container .table{
+    margin-top: 60px;
+}
+
+
+/*  ---------------------------------------------------------------------------------------------------------- */
 
 /* MEDIA CHANGES */
 /* Change the size of the navbar on changing the size of the screen */
 @media(max-width: 900px){
 .navbar-expand-sm {
-background-color: #0BADA6 !important;
-}
+background-color: #0BADA6 !important;}}
+
 
 /* don't add anything under here that you don't want affected by @media */
