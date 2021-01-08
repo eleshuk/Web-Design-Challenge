@@ -43,7 +43,8 @@ body {
     color: #0BADA6;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
-    padding: auto;
+    padding:auto;
+    margin: auto;
 }
 
 .row {
@@ -90,6 +91,8 @@ a .detail:hover {
     border:0.1px solid black;
 }
 
+
+/* Text under visualizations graphs */
 .overlay {
     color: black;
     text-align: right;
@@ -137,13 +140,23 @@ a:hover {
 .table {
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 0px;
-    margin-top: 60px;
+    padding-top: 25px;
+    padding-bottom: 0px;
     background-color: white;
 }
 .container .table{
     margin-top: 60px;
 }
+
+/* .data-box {
+    position: relative;
+    margin-top: 60px; 
+    margin-bottom: 62px; 
+    padding: 25px 15px 40px; 
+    padding-right: 50px;
+    color:black;
+    background-color: white; 
+} */
 
 
 /*  ---------------------------------------------------------------------------------------------------------- */
@@ -154,5 +167,10 @@ a:hover {
 .navbar-expand-sm {
 background-color: #0BADA6 !important;}}
 
+/* Box around image when you hover over it */
 
-/* don't add anything under here that you don't want affected by @media */
+@media(max-width: 1000px){
+.container .option:hover {
+    border:none;
+}}
+

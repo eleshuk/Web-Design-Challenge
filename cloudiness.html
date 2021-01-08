@@ -14,35 +14,87 @@
 <!-- Image of Lat vs. Temp to the left -->
 <!-- Paragraph with summary to the right of the image. You'll need a grid for this -->
 
-
-
 <body>
-  <nav class = "navbar navbar-expand-sm navbar-light bg-light">
-      <a href="index.html" class = "navbar-brand">Latitude</a>
-      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class = "collapse navbar-collapse" id="navbarMenu">
-          <ul class = "navbar-nav ml-auto">
-            <li class="dropdown">
-                <a href="plots.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Plots</a>
-                <!-- in the href is where you essentially link your navbar to other html files with other info -->
-                    <div class="dropdown-menu">
-                        <a href="max-temp.html" class="dropdown-item">Max Temperature</a>
-                        <a href="humidity.html" class="dropdown-item">Humidity</a>
-                        <a href="cloudiness.html" class="dropdown-item">Cloudiness</a>
-                        <a href="wind-speed.html" class="dropdown-item">Wind Speed</a>
+    <nav class = "navbar navbar-expand-sm navbar-light bg-light">
+        <a href="index.html" class = "navbar-brand">Latitude</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class = "collapse navbar-collapse" id="navbarMenu">
+            <ul class = "navbar-nav ml-auto">
+                <li class="dropdown">
+                    <a href="plots.html" class="nav-link dropdown-toggle" data-toggle="dropdown">Plots</a>
+                    <!-- in the href is where you essentially link your navbar to other html files with other info -->
+                        <div class="dropdown-menu">
+                            <a href="max-temp.html" class="dropdown-item">Max Temperature</a>
+                            <a href="humidity.html" class="dropdown-item">Humidity</a>
+                            <a href="cloudiness.html" class="dropdown-item">Cloudiness</a>
+                            <a href="wind-speed.html" class="dropdown-item">Wind Speed</a>
+                        </div>
+                </li>
+                    <li class = "nav-item">
+                        <a href="comparison.html" class = "nav-link">Comparison</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href ="data.html" class = "nav-link">Data</a>
+                    </li>
+            </ul>
+        </div> 
+    </nav>
+    <div class="container"> 
+        <!-- this needs to be named container for bootstrap to know what to do -->
+        <!-- add rows and columns. You can add as many rows as you need -->
+        <div class="row">
+        <div class="col-lg-8 col-md-12"> 
+                <!-- Add box on left side -->
+            <div class="sum-box">
+                <h2 class="title">Cloudiness</h2>
+                <hr>
+                <img src="Visualizations/Latitude_vs_Temp_Max.png" width="100%" class="visualization float-left" alt="lat-temp-max">
+                <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To
+                    accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
+                    500 cities.</p>
+                <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude.
+                    Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the
+                    source data and visualizations created as part of the analysis, as well as explanations and descriptions of
+                    any trends and correlations witnessed.</p>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <!-- Right Box -->
+            <div class="vis-box">
+                <h5 class="title">Visualizations</h5>
+                <hr>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a href="max-temp.html">
+                                <img class="option" src="Visualizations/Latitude_vs_Temp_Max.png" width="125%" alt="temp">
+                                <div class="overlay">Temp Max</div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="humidity.html">
+                                <img class="option" src="Visualizations/Latitude_vs_Hum.png" width="125%" alt="humidity">
+                                <div class="overlay">Humidity</div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="cloudiness.html">
+                                <img class="option" src="Visualizations/Latitude_vs_Cloud.png" width="125%" alt="cloudiness">
+                                <div class="overlay">Cloudiness</div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="wind-speed.html">
+                                <img class="option" src="Visualizations/Latitude_vs_Wind_Speed.png" width="125%" alt="wind">
+                                <div class="overlay">Wind Speed</div>
+                            </a>
+                        </div>
                     </div>
-            </li>
-                <li class = "nav-item">
-                    <a href="comparison.html" class = "nav-link">Comparison</a>
-                </li>
-                <li class = "nav-item">
-                    <a href ="data.html" class = "nav-link">Data</a>
-                </li>
-          </ul>
-      </div> 
-  </nav>
+                </div>
+            </div>
+    </div>
 
 
     <!-- Optional JavaScript -->
