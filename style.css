@@ -100,6 +100,18 @@ a .detail:hover {
     padding: 1px 20px 10px;
 }
 
+/* Change font size, color above smaller visualizations */
+.img-title {
+    color: #0BADA6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: normal;
+    padding-top: 10px;
+    padding:auto;
+    margin: auto;
+    font-size: 10px;
+    text-align: center;
+}
+
 /*  ---------------------------------------------------------------------------------------------------------- */
 
 /* COMPARISON PAGE */
@@ -163,13 +175,13 @@ a:hover {
 
 /* MEDIA CHANGES */
 /* Change the size of the navbar on changing the size of the screen */
-@media(max-width: 900px){
+@media(max-width: 992px){
 .navbar-expand-sm {
 background-color: #0BADA6 !important;}}
 
 /* Box around image when you hover over it */
 
-@media(max-width: 1000px){
+@media(max-width: 992px){
 .container .option:hover {
     border:none;
 }}
