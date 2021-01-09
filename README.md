@@ -1,6 +1,6 @@
 # Web-Design-Challenge
 
-App can be found at https://eleshuk.github.io/web-design-challenge/
+App can be found at  https://eleshuk.github.io/Web-Design-Challenge/
 
 For this project, I created a visualization dashboard website using visualizations I've created in a past assignment. Specifically, I'll be plotting weather data.
 In building this dashboard, I'll create individual pages for each plot and a means by which one can navigate between them. These pages will contain the visualizations and their corresponding explanations. I'll also have a landing page, a page where one can see a comparison of all of the plots, and another page where one can view the data used to build them.
